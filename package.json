@@ -1,0 +1,15 @@
+{
+  "name": "rds-startstop",
+  "version": "1.0.0",
+  "description": "start/stop rds instances",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcelo Keiti Nakamura",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.219.1",
+    "moment": "^2.22.0"
+  }
+}
