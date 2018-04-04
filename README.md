@@ -68,6 +68,7 @@ DefaultStopTime: Default Stop Time (UTC, 24-hour format)
 As the time this tutorial was implemented, claudia.js didn't support NodeJs 8.10. Then, we first create the lambda function through AWS Console.
 
 Version: NodeJs 8.10
+
 Role: AWSStartStopRDSForLambda
 
 #### 4. Deploying Lambda function to AWS using claudia.js
