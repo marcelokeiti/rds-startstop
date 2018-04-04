@@ -14,7 +14,7 @@ These instructions will guide you to deploy the solution on Amazon Web Services
 
 ### Installing
 
-1. Create DynamoDB Table to parametrize the default values:
+#### 1. Create DynamoDB Table to parametrize the default values:
 
 Table Name: RDS-Scheduler
 
@@ -28,7 +28,7 @@ DefaultStartTime: Default Start Time (UTC, 24-hour format)
 
 DefaultStopTime: Default Stop Time (UTC, 24-hour format)
 
-2. Create IAM Role: AWSStartStopRDSForLambda
+#### 2. Create IAM Role: AWSStartStopRDSForLambda
 
 ```
 {
@@ -63,15 +63,14 @@ DefaultStopTime: Default Stop Time (UTC, 24-hour format)
 }
 ```
 
-
-3. Create Lambda Function
+#### 3. Create Lambda Function
 
 As the time this tutorial was implemented, claudia.js didn't support NodeJs 8.10. Then, we first create the lambda function through AWS Console.
 
 Version: NodeJs 8.10
 Role: AWSStartStopRDSForLambda
 
-4. Deploying Lambda function to AWS using claudia.js
+#### 4. Deploying Lambda function to AWS using claudia.js
 
 ```
 git clone https://github.com/marcelokeiti/rds-startstop.git
